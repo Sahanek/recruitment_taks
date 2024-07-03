@@ -1,9 +1,9 @@
 package it.teems.codingtask.weatherapi;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import it.teems.codingtask.dto.WeatherApiResponse;
 
 public interface WeatherApi {
 
     // Feel free to modify
-    JsonNode getWeather(String location);
+    WeatherApiResponse getWeather(String location);
 }

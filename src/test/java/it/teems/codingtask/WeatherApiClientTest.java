@@ -18,7 +18,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 class WeatherApiClientTest {
-
     @Autowired
     WeatherApi weatherApi;
     @Autowired
@@ -28,6 +27,7 @@ class WeatherApiClientTest {
 
     @Test
     void contextBootsUp() {
+
     }
 
     @Test
@@ -38,4 +38,5 @@ class WeatherApiClientTest {
                         {"status": "UP"}
                         """));
     }
+
 }
