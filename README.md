@@ -89,5 +89,12 @@ The task is to collect weather data from the https://www.weatherapi.com api, sto
 
 7. Think of what would be valuable to test.
 8. Think of what would be valuable to document in this project.
+   1. DB_PASSWORD and DB_USERNAME are the environment variables which have to be set before launching the application
+   2. 
 9. Don't feel pressured to make this perfect.
 10. At the end of your work write-down what you would do next if you had more time.
+    1. Create Config class for all properties or extract bean initialization with properties to Configuration class.
+    2. Create db scripts and use flyway instead of creating database with each run
+    3. Create integration tests for controller with db checks
+    4. use mapstruct or other mapper library if the service is to be more extensive
+    5. Add property to enable scheduled task
